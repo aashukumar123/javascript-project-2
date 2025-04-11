@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"defer></script>
+    <title>popup</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class=" menu-btn material-symbols-rounded">
+                &#9776;
+            </span>
+            <a href="#" class="logo">
+                <img src="./images/icon.jpg" alt="logo">
+                <h2>CodingNepal</h2>
+            </a>
+            <ul class="links">
+                <span class=" close-btn material-symbols-rounded">
+                    &times;
+                </span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                
+
+            </ul>
+            <button class="login-btn"> LOG IN</button>
+        </nav>
+    </header>
+    <!-- popup -->
+     <div class="blur-bg-overlay"></div>
+   
+
+     <div class="form-popup">
+        <span class=" close-btn material-symbols-rounded">
+            &times;
+        </span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back </h2>
+                <p>Please log in using your personal information to stay connected</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field"required>
+                        <input type="text"
+                       >
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field"required>
+                        <input type="password">
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass">forgot password</a>
+                    <button type="submit">Log In</button>
+
+                </form>
+                <div class="bottom-link">
+                    Dont have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account </h2>
+                <p>to become part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field"required>
+                        <input type="text"
+                       >
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field"required>
+                        <input type="password">
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">I agree the 
+                            <a href="#">Term & conditons</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id ="login-link">login</a>
+                </div>
+                
+
+            </div>
+        </div>
+     </div>
+    
+</body>
+</html>
